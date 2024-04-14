@@ -1,0 +1,31 @@
+{
+    "cortex-debug.armToolchainPath.osx": "/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/",
+    "cortex-debug.stutilPath": "/opt/homebrew/bin/st-util",
+    "cortex-debug.gdbPath": "/Applications/ArmGNUToolchain/12.2.mpacbti-rel1/arm-none-eabi/bin/arm-none-eabi-gdb",
+    "cortex-debug.variableUseNaturalFormat": true,
+    "cortex-debug.openocdPath": "/opt/homebrew/bin/openocd",
+    "files.associations": {
+        "stdint.h": "c",
+        "pwr.h": "c",
+        "systick.h": "c",
+        "rcc.h": "c",
+        "stdio.h": "c",
+        "__locale": "c",
+        "__verbose_abort": "c",
+        "atomic": "c",
+        "cstdlib": "c",
+        "filesystem": "c",
+        "locale": "c",
+        "new": "c",
+        "ostream": "c",
+        "typeinfo": "c",
+        "algorithm": "c",
+        "complex": "c",
+        "*.inc": "c",
+        "systick_setup.h": "c",
+        "ssd1306_i2c.h": "c",
+        "i2c.h": "c",
+        "stdbool.h": "c",
+        "ssd1306.h": "c"
+    }
+}

@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "gcc",
+            "includePath": [
+                "/Users/ahmetefeakyazi/Desktop/Files/projects/stm32/libopencm3/include"
+            ],
+            "defines": [
+                "STM32F4"
+            ],
+            "cStandard": "c11",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x86"
+        }
+    ],
+    "version": 4
+}

@@ -52,6 +52,7 @@ OBJCOPY	= $(PREFIX)objcopy
 OBJDUMP	= $(PREFIX)objdump
 OOCD	?= openocd
 
+OPENCM3_DIR = /Users/ahmetefeakyazi/Desktop/Files/projects/stm32/libopencm3
 OPENCM3_INC = $(OPENCM3_DIR)/include
 
 # Inclusion of library header files
@@ -66,7 +67,7 @@ TGT_CPPFLAGS += -MD
 TGT_CPPFLAGS += -Wall -Wundef $(INCLUDES)
 TGT_CPPFLAGS += $(INCLUDES) $(OPENCM3_DEFS)
 
-TGT_CFLAGS += $(OPT) $(CSTD) -ggdb3
+TGT_CFLAGS += $(OPT) $(CSTD) -ggdb3 -O0
 TGT_CFLAGS += $(ARCH_FLAGS)
 TGT_CFLAGS += -fno-common
 TGT_CFLAGS += -ffunction-sections -fdata-sections

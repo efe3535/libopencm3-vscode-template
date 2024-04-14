@@ -1,0 +1,49 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug STM32F446RE",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/src/ssd1306.elf",
+            "request": "launch",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "${workspaceFolder}/stm32f446re.cfg"
+            ],
+            "interface": "swd",
+            //"runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/.vscode/svd/STM32F446.svd",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "preLaunchTask": "build debug",
+            "preRestartCommands": [
+                "load ${cwd}/src/ssd1306.elf"
+            ]
+        },
+        {
+            "name": "Attach STM32F446RE",
+            "cwd": "${workspaceFolder}",
+            "executable": "${workspaceFolder}/src/ssd1306.elf",
+            "request": "attach",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "${workspaceFolder}/stm32f446re.cfg"
+            ],
+            "interface": "swd",
+            //"runToEntryPoint": "main",
+            "svdFile": "${workspaceFolder}/.vscode/svd/STM32F446.svd",
+            "liveWatch": {
+                "enabled": true,
+                "samplesPerSecond": 4
+            },
+            "preLaunchTask": "build debug",
+            "preRestartCommands": [
+                "load ${cwd}/src/ssd1306.elf"
+            ]
+        }
+    ]
+}
